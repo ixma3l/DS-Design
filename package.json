@@ -1,0 +1,63 @@
+{
+  "name": "@ixma3l/ds-system",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sistema de diseño y biblioteca de componentes React",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build:library": "tsc -p tsconfig.build.json && vite build",
+    "build": "pnpm run build:library",
+    "typecheck": "tsc --noEmit",
+    "validate": "pnpm run typecheck && pnpm run build:library && pnpm run build-storybook"
+  },
+  "keywords": [
+    "design-system",
+    "react",
+    "typescript",
+    "components",
+    "storybook"
+  ],
+  "author": "Ismael Concha",
+  "license": "ISC",
+  "packageManager": "pnpm@11.14.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "10.5.2",
+    "@storybook/addon-docs": "10.5.2",
+    "@storybook/react-vite": "^10.5.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "storybook": "^10.5.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.1.5"
+  }
+}

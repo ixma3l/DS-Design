@@ -1,0 +1,9 @@
+:root {
+  --ds-color-primary-600: #4f46e5;
+  --ds-color-primary-700: #4338ca;
+
+  --ds-color-neutral-200: #e2e8f0;
+  --ds-color-neutral-900: #0f172a;
+
+  --ds-radius-md: 0.5rem;
+}

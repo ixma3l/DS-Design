@@ -1,0 +1,51 @@
+# Dependencias
+node_modules/
+
+# Compilación de la librería
+dist/
+
+# Compilación estática de Storybook
+storybook-static/
+
+# Cobertura y pruebas
+coverage/
+test-results/
+playwright-report/
+blob-report/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cachés
+.cache/
+.vite/
+.turbo/
+.eslintcache
+*.tsbuildinfo
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+tmp/
+temp/
+*.tmp
+
+# Storybook
+.storybook-cache/
